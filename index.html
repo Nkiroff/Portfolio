@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="dark light" />
+  <meta name="description" content="Nikolas Kiroff – Software Engineer focused on backend development, crafting performant, secure, and maintainable systems." />
+  <meta name="author" content="Nikolas Kiroff" />
+  <meta name="theme-color" content="#6d5efc" />
+  <title>Nikolas Kiroff — Developer Portfolio</title>
+  <link
+    rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>"
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="#home" aria-label="Go to Home">NK</a>
+      <ul class="nav-links" role="list">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="toolbar" aria-label="Quick actions">
+        <a class="pill" href="#projects">Available for Summer ’26</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="content">
+    <!-- ===== Hero ===== -->
+    <section class="section hero" id="home" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-intro">
+          <span class="kicker">Backend • APIs • Scalability</span>
+          <h1 id="hero-title">
+            Nikolas Kiroff <span class="role">Software Engineer</span>
+          </h1>
+          <p class="lede">
+            I build fast, accessible interfaces with clean architecture and delightful motion. Currently polishing a syllabus-to-Calendar tool and a loop-based habit tracker.
+          </p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="#contact">Contact</a>
+            <a class="btn btn-ghost" href="#about">About me</a>
+          </div>
+        </div>
+
+        <aside class="hero-aside" aria-hidden="true">
+          <div class="orb" title="Gradient avatar placeholder"></div>
+          <div class="hero-stats" role="list" aria-label="Highlights">
+            <div class="stat">
+              <b>4</b><span>Full Stack Projects</span>
+            </div>
+            <div class="stat">
+              <b>Interest</b><span>Backend • ML • Cloud</span>
+            </div>
+            <div class="stat">
+              <b>Goal</b><span>Efficient, Maintainable Code</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ===== Tech Marquee ===== -->
+    <section class="section marquee" aria-label="Technologies">
+      <div class="marquee-track" aria-hidden="true">
+        <ul class="marquee-list" role="list">
+          <li>Python</li><li>Java</li><li>SQL</li><li>APIs</li>
+          <li>Data Modeling</li><li>Cloud</li><li>Scalability</li>
+          <li>Testing</li><li>Security</li>
+        </ul>
+        <ul class="marquee-list" role="list" aria-hidden="true">
+          
+          <li>Python><li>Java</li><li>SQL</li><li>APIs</li>
+          <li>Data Modeling</li><li>Cloud</li><li>Scalability</li>
+          <li>Testing</li><li>Security</li>
+
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== Projects ===== -->
+    <section class="section projects" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <h2 id="projects-title">Projects</h2>
+        <div class="grid">
+          <article class="card project" aria-labelledby="p1-title">
+            <h3 id="p1-title">Syllabi — Calendar Sync</h3>
+            <p>
+              Upload a course syllabus and auto-sync exams, assignments, and quizzes to Google Calendar. Extracts key insights like professor info and bonus marks.
+            </p>
+            <ul class="tags" role="list">
+              <li>Python</li><li>Flask</li><li>PyMuPDF</li><li>Gemini</li><li>Google Calendar API</li>
+            </ul>
+            <div class="links">
+              <a class="link" href="#" target="_blank" rel="noopener">Case Study</a>
+              <a class="link" href="#" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
+
+          <article class="card project" aria-labelledby="p2-title">
+            <h3 id="p2-title">Airline Reservation & Scheduling System</h3>
+            <p>
+              Java and SQL-based system for managing airline bookings, flight schedules, and passenger records.
+              Includes real-time seat availability checks, secure reservation processing, and efficient database queries.
+            </p>
+            <ul class="tags" role="list">
+              <li>Java</li><li>SQL</li><li>Database Design</li><li>Backend</li>
+            </ul>
+            <div class="links">
+              <a class="link" href="#" target="_blank" rel="noopener">Overview</a>
+              <a class="link" href="#" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
+
+
+          <article class="card project" aria-labelledby="p3-title">
+            <h3 id="p3-title">FraudWatch — XGBoost</h3>
+            <p>
+              Bank-focused fraud likelihood scoring from raw transaction features with explainability and threshold tuning for precision/recall trade-offs.
+            </p>
+            <ul class="tags" role="list">
+              <li>Python</li><li>XGBoost</li><li>AWS</li><li>ML</li>
+            </ul>
+            <div class="links">
+              <a class="link" href="#" target="_blank" rel="noopener">Overview</a>
+              <a class="link" href="#" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
+
+          <article class="card project" aria-labelledby="p4-title">
+            <h3 id="p4-title">Realtime Dashboard</h3>
+            <p>
+              Responsive, accessible dashboard UI with glass cards, keyboard-first navigation and theming.
+            </p>
+            <ul class="tags" role="list">
+              <li>HTML</li><li>CSS</li><li>Design</li>
+            </ul>
+            <div class="links">
+              <a class="link" href="#" target="_blank" rel="noopener">Demo</a>
+              <a class="link" href="#" target="_blank" rel="noopener">Code</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">About</h2>
+        <div class="about-grid">
+          <div class="bio">
+            <p>
+             I’m a backend-focused developer who enjoys building reliable, scalable systems. I care about clean architecture, efficient data handling, and the details that make applications fast and dependable.
+            </p>
+            <ul class="bullets">
+              <li>Database design and optimization</li>
+              <li>API development and integration</li>
+              <li>Secure, scalable architecture</li>
+              <li>Collaborative, detail-oriented process</li>
+            </ul>
+
+            <ul class="skills" role="list" aria-label="Skills">
+              <li>Python><li>Java</li><li>SQL</li><li>APIs</li>
+              <li>Data Modeling</li><li>Cloud</li><li>Scalability</li>
+              <li>Testing</li><li>Security</li>
+            </ul>
+          </div>
+
+          <ol class="timeline" aria-label="Experience and education">
+            <li>
+              <div class="dot" aria-hidden="true"></div>
+              <div class="time">2025 — Present</div>
+              <div class="entry">Projects: Syllabi, Airline Scheduling, FraudWatch</div>
+            </li>
+            <li>
+              <div class="dot" aria-hidden="true"></div>
+              <div class="time">2023 — Present</div>
+              <div class="entry">B.Sc. Computer Science — Western University · Minor in Software Engineering</div>
+            </li>
+            <li>
+              <div class="dot" aria-hidden="true"></div>
+              <div class="time">Summer 2023</div>
+              <div class="entry">Coding Instructor · Code Ninjas (Toronto — Leaside)</div>
+            </li>
+
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container">
+        <h2 id="contact-title">Contact</h2>
+        <div class="card contact-card">
+          <p>Want to collaborate or say hi?</p>
+          <p>
+            <a class="btn btn-primary" href="mailto:hello@example.com" aria-label="Email Nikolas">Email me</a>
+          </p>
+          <ul class="social" role="list" aria-label="Social links">
+            <li>
+              <a href="https://github.com/yourname" target="_blank" rel="noopener">
+                <img src="assets/github.svg" alt="" width="20" height="20" />
+                <span class="sr-only">GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/yourname" target="_blank" rel="noopener">
+                <img src="assets/linkedin.svg" alt="" width="20" height="20" />
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://x.com/yourname" target="_blank" rel="noopener">
+                <img src="assets/x.svg" alt="" width="20" height="20" />
+                <span class="sr-only"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container smallprint">
+      © <time datetime="2025">2025</time> Nikolas Kiroff. Built with semantic HTML and modern CSS.
+    </div>
+  </footer>
+
+  <script>
+    // Remove any potential loading overlay (if you keep it)
+    const loading = document.querySelector('.loading-screen');
+    if (loading) loading.remove();
+
+    // Basic scroll spy for active nav link
+    const sections = [...document.querySelectorAll('main .section')];
+    const links = [...document.querySelectorAll('.nav a[href^="#"]')];
+    const byId = id => document.querySelector(id);
+
+    const io = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) {
+            links.forEach((a) => a.removeAttribute('aria-current'));
+            const link = document.querySelector(`.nav a[href="#${e.target.id}"]`);
+            if (link) link.setAttribute('aria-current', 'true');
+          }
+        });
+      },
+      { rootMargin: '-40% 0px -50% 0px', threshold: 0.01 }
+    );
+
+    sections.forEach((s) => io.observe(s));
+  </script>
+</body>
+</html>
