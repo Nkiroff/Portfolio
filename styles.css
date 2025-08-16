@@ -140,6 +140,8 @@ h3 {
   text-decoration: none;
   box-shadow: var(--shadow);
 }
+.brand-text{ display:block; line-height:1; transform:translateX(-2px); }
+
 
 .nav-links { display: flex; gap: clamp(6px, 1.6vw, 14px); }
 
