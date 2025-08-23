@@ -362,9 +362,10 @@ h3 {
   display: flex;
   gap: 40px;
   overflow: hidden;
+  align-items: center;
 }
 
-.marquee-list {
+.marquee-list  {
   display: flex;
   gap: 40px;
   margin: 0;
@@ -374,6 +375,15 @@ h3 {
   font-size: 12px;
   font-weight: 600;
   animation: marquee 24s linear infinite;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.marquee-list li {
+  display: inline-flex;             
+  align-items: center;
+  white-space: nowrap;              
+  word-break: keep-all;
 }
 
 .marquee:hover .marquee-list { animation-play-state: paused; }
@@ -407,13 +417,21 @@ h3 {
 
 .project { display: grid; gap: 10px; }
 
+
 .project .tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  align-items: center;              /* ← stop cross-axis stretch */
+  list-style: none; padding: 0; margin: 0;
 }
 
+/* chip: hug content, consistent height */
 .project .tags li {
+  display: inline-flex;             /* ← not list-item */
+  align-items: center;
+  line-height: 1;                   /* ← no tall line box */
+  white-space: nowrap;              /* ← keep each tag on one line */
   padding: 6px 12px;
   border-radius: 999px;
   border: 1px solid var(--border);
@@ -421,12 +439,19 @@ h3 {
   color: hsl(265 90% 85%);
   font-size: 12px;
   font-weight: 600;
+  background-clip: padding-box;
+  overflow: hidden;                 /* clean corner clipping */
 }
 
-.project .links {
-  display: flex;
-  gap: 12px;
-  margin-top: 6px;
+/* tighten project link chips */
+.project .links .link {
+  display: inline-flex;      /* not inline */
+  align-items: center;
+  line-height: 1;            /* avoid tall line box */
+  background-clip: padding-box;
+  /* optional: drop the extra blur to prevent artifacts */
+  backdrop-filter: none;     /* or blur(6px) if you like */
+  -webkit-backdrop-filter: none;
 }
 
 .link {
